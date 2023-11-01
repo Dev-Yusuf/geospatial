@@ -113,13 +113,16 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@10.3.0/swiper-bundle.min.js"></script>
   <script>
     const spinnerWrapperEl = document.querySelector('.spinner-wrapper');
-     window.addEventListener('load', () => {
-       spinnerWrapperEl.style.opacity = '0';
-       setTimeout(() => {
-        spinnerWrapperEl.style.display = 'none'
-      }, 200);
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        spinnerWrapperEl.style.opacity = '0';
+        setTimeout(() => {
+          spinnerWrapperEl.style.display = 'none';
+        }, 200);
+      }, 1000); // Increase the timeout to 2000 milliseconds (2 seconds)
     });
   </script>
+  
   
 
 </body>
