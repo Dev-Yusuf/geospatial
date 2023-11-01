@@ -3,7 +3,7 @@
 
 }
 /* Adjust the width as needed */
-/*.spinner-wrapper{
+.spinner-wrapper{
   background-color: #000;
   position: fixed;
   top: 0;
@@ -16,7 +16,7 @@
   align-items: center;
   transition: all 0.2s;
 }
-*/
+
 .spinner-border{
   height: 60px;
   width: 60px;
