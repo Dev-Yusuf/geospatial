@@ -10,7 +10,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
-/* Adjust the width as needed */
+
 .spinner-wrapper{
   background-color: #000;
   position: fixed;
@@ -36,8 +36,8 @@
 }
 
 .navbar-brand img {
-  width: 120px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: 120px; 
+  height: auto; 
 }
 
 .navbar-nav a{
@@ -57,7 +57,7 @@
   color: white;
   position: relative;
   display: flex;
-  align-items: center; /* Vertically center the content */
+  align-items: center; 
 }
 
 .carousel-item .container {
@@ -74,9 +74,9 @@
 }
 
 .partners-section {
-  background-color: whitesmoke;
+  background-color: #f4f9ff;
   display: grid;
-  place-items: center; /* Vertically center the content */
+  place-items: center; 
 }
 
 .partners-section h1 {
@@ -140,8 +140,8 @@ ul.brands li.brand-logo {
 }
 
 .brand-logo-container {
-  width: 150px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: 150px; 
+  height: auto; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,8 +199,119 @@ ul.brands li.brand-logo {
 }
 
 .section-4 {
-  margin-bottom: 30px; /* Adjust the margin size as needed */
+  margin-bottom: 30px; 
+  background-color: #f4f9ff;
 }
 .section-5 {
-  margin-bottom: 20px; /* Adjust the margin size as needed */
+  margin-bottom: 20px; 
+}
+
+.service-container {
+  border-radius: 20px;
+  border: 1px solid #000;
+  background: #F4F9FF;
+  height: 260px;
+  width: 260px; 
+  flex-shrink: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.service-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.service-container h3 {
+  font-size: 20px;
+}
+
+.service-container p {
+  font-size: 16px;
+}
+
+/* values-container */
+
+.values-section {
+  background-color: #fff;
+}
+
+.values-container {
+  background: #f4f9ff;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.values-container h3 {
+  font-size: 20px;
+}
+
+.values-container p {
+  font-size: 16px;
+}
+
+.service-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+/* stats section */
+
+.stats-wrapper {
+  background-color: black;
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.stats-container {
+  margin: 40px 0;
+  width: 150px; /* Adjust the size as needed */
+  text-align: center;
+  padding: 20px;
+  border-radius: 0.5em;
+  background-color: white;
+  border-bottom: 10px solid #f4f9ff;;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+i {
+  color: aqua;
+  font-size: 1rem;
+}
+
+span.num {
+  color: rgb(22, 21, 21);
+  font-weight: 600;
+  font-size: 3em;
+}
+
+span.text {
+  color: rgb(22, 21, 21);
+  text-align: center;
+  font-size: 14px;
+  padding: 0.2em 0;
+  text-align: center;
+  line-height: 1;
+  margin-top: 6px;
+}
+
+span.num::after {
+  content: "+";
+  font-size: 1em; /* Adjust the font size as needed */
+  margin-right: 0.2em; /* Adjust the spacing between the "+" sign and the number */
+}
+
+span.num.percent::after {
+  content: "%";
+  font-size: 24px; /* Adjust the size as needed */
+  vertical-align: middle; /* Center the "%" sign vertically */
 }
