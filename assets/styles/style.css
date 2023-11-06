@@ -198,28 +198,24 @@ ul.brands li.brand-logo {
   color: white;
 }
 
-.section-4 {
+.mission-section {
   margin-bottom: 30px; 
   background-color: #f4f9ff;
 }
-.section-5 {
+.vision-section {
   margin-bottom: 20px; 
 }
 
-.service-container {
-  border-radius: 20px;
-  border: 1px solid #000;
-  background: #F4F9FF;
-  height: 260px;
-  width: 260px; 
-  flex-shrink: 0;
-  padding: 20px;
-  text-align: center;
+.service-section {
+  background-color: #fff;
 }
 
-.service-icon {
-  font-size: 36px;
-  margin-bottom: 10px;
+.service-container {
+  background: #f4f9ff;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  
 }
 
 .service-container h3 {
@@ -230,6 +226,10 @@ ul.brands li.brand-logo {
   font-size: 16px;
 }
 
+.custom-icon {
+  max-width: 50px;
+  max-height: 50px; 
+}
 /* values-container */
 
 .values-section {
@@ -258,60 +258,35 @@ ul.brands li.brand-logo {
 }
 /* stats section */
 
-.stats-wrapper {
-  background-color: black;
-  margin: 50px 0;
+.stats-section {
+  background-color: azure;
+  font-family: 'Courier New', Courier, monospace;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  gap: 15px;
-}
+  margin: 20px 0;
 
-.stats-container {
-  margin: 40px 0;
-  width: 150px; /* Adjust the size as needed */
-  text-align: center;
-  padding: 20px;
-  border-radius: 0.5em;
-  background-color: white;
-  border-bottom: 10px solid #f4f9ff;;
-  font-size: 16px;
+}
+.stats-container{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-}
-
-i {
-  color: aqua;
-  font-size: 1rem;
-}
-
-span.num {
-  color: rgb(22, 21, 21);
-  font-weight: 600;
-  font-size: 3em;
-}
-
-span.text {
-  color: rgb(22, 21, 21);
+  justify-content: center;
   text-align: center;
-  font-size: 14px;
-  padding: 0.2em 0;
-  text-align: center;
-  line-height: 1;
-  margin-top: 6px;
+  margin: 30px 50px;
+}
+.counter{
+  font-size: 60px;
+  margin-top: 10px;
+}
+@media (max-width: 580px){
+  .stats-section{
+    flex-direction: column;
+  }
 }
 
-span.num::after {
-  content: "+";
-  font-size: 1em; /* Adjust the font size as needed */
-  margin-right: 0.2em; /* Adjust the spacing between the "+" sign and the number */
-}
-
-span.num.percent::after {
-  content: "%";
-  font-size: 24px; /* Adjust the size as needed */
-  vertical-align: middle; /* Center the "%" sign vertically */
+@media (max-width: 767px) {
+  .service-section .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
