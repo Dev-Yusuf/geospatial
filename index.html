@@ -221,7 +221,7 @@
 
 <section class="service-section">
   <div class="container text-center">
-    <h2 class="values-heading">Our Core Values</h2>
+    <h2 class="values-heading">Our Services</h2>
     <p class="service-text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum urna ut facilisis. 
       Nulla fringilla leo eu libero vestibulum, nec ultricies lorem condimentum.
@@ -231,22 +231,22 @@
     <div class="row">
       <div class="col-md-4 mb-4">
         <div class="values-container">
-          <i class="service-icon fa fa-icon1"></i>
-          <h3>Adaptability</h3>
+          <img src="./assets/images/data conversion 1.png" class="custom-icon" alt="data icon">
+          <h3>Data Conversion</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="col-md-4 mb-4">
         <div class="values-container">
-          <i class="service-icon fa fa-icon2"></i>
-          <h3>Unity</h3>
+          <img src="./assets/images/electrical engr 2.png" class="custom-icon" alt="electrical icon">
+          <h3>Digital Record Management</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="col-md-4 mb-4">
         <div class="service-container">
-          <i class="service-icon fa fa-icon3"></i>
-          <h3>Excellence</h3>
+          <img src="./assets/images/arch 1.png" class="custom-icon" alt="gis icon">
+          <h3>GIS</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
@@ -254,22 +254,22 @@
     <div class="row">
       <div class="col-md-4 mb-4">
         <div class="service-container">
-          <i class="service-icon fa fa-icon4"></i>
-          <h3>Desire</h3>
+          <img src="./assets/images/ds.png" class="custom-icon" alt="drawing icon">
+          <h3>Drawing Salvaging</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="col-md-4 mb-4">
         <div class="service-container">
-          <i class="service-icon fa fa-icon5"></i>
-          <h3>Creativity</h3>
+          <img src="./assets/images/cicil engr 1.png" class="custom-icon" alt="civil logo">
+          <h3>Design and Construction</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="col-md-4 mb-4">
         <div class="service-container">
-          <i class="service-icon fa fa-icon6"></i>
-          <h3>Transparency</h3>
+          <img src="./assets/images/software 1.png" class="custom-icon" alt="software icon">
+          <h3>Software Solution</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
@@ -346,27 +346,27 @@
 
 <section class="stats-section">
   <div class="stats-container">
-    <i class="fa-solid fa-users"></i>
-    <div class="counter" data-target="1200">1400</div>
+    <img src="./assets/images/transparency.png" class="custom-icon" alt="transparency icon">
+    <div class="counter" data-target="7"></div>
     <span>Years of services</span>
   </div>
 
   <div class="stats-container">
-    <i class="fa-solid fa-users"></i>
-    <div class="counter" data-target="1200">1400</div>
-    <span>Years of services</span>
+    <img src="./assets/images/transparency.png" class="custom-icon" alt="transparency icon">
+    <div class="counter" data-target="5"></div>
+    <span>Global Partners</span>
   </div>
   
   <div class="stats-container">
-    <i class="fa-solid fa-users"></i>
-    <div class="counter" data-target="1200">1400</div>
-    <span>Years of services</span>
+    <img src="./assets/images/transparency.png" class="custom-icon" alt="transparency icon">
+    <div class="counter" data-target="96"></div>
+    <span>Customer Retention</span>
   </div>
   
   <div class="stats-container">
-    <i class="fa-solid fa-users"></i>
-    <div class="counter" data-target="1200">1400</div>
-    <span>Years of services</span>
+    <img src="./assets/images/transparency.png" class="custom-icon" alt="transparency icon">
+    <div class="counter" data-target="20"></div>
+    <span>projects</span>
   </div>
   
 
@@ -403,23 +403,28 @@
  </main>
 
  <script>
-  let valueDisplay = document.querySelectorAll(".num");
-let interval = 5000;
+  const counters = document.querySelectorAll('.counter');
+  
+  counters.forEach((counter) => {
+    const updateCounter = () => {
+      const target = +counter.getAttribute('data-target');
+      const increment = target / 1000;
 
-valueDisplay.forEach((valueDisplay) => {
-  let startValue = 0;
-  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-  let duration = Math.floor(interval / endValue);
-  let counter = setInterval(function (){
-    startValue += 1;
-    valueDisplay.textContent = startValue;
-    if (startValue == endValue) {
-      clearInterval(counter);
-    }
-  }, duration);
-});
+      let currentValue = +counter.innerText;
+      if (currentValue < target) {
+        currentValue += increment;
+        if (currentValue > target) {
+          currentValue = target;
+        }
+        counter.innerText = Math.ceil(currentValue);
+        requestAnimationFrame(updateCounter);
+      }
+    };
 
- </script>
+    updateCounter();
+  });
+</script>
+
   <!-- JavaScript and jQuery scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
