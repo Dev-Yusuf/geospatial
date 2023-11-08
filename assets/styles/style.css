@@ -89,7 +89,7 @@
 
 .slider {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 10rem;
   background-color: #fff;
   box-shadow: 0 .8rem 1.4rem -.2rem #0001;
@@ -152,8 +152,284 @@ ul.brands li.brand-logo {
   max-height: 100%;
 }
 
-.about-h, .mission-h, .vision-h{
+.vision-h{
   margin-top: 20px;
+}
+
+/* about us */
+.about-section{
+  width: 100%;
+  min-height: 100vh;
+  background-color: azure;
+}
+.about-container{
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.content-section{
+  float: left;
+  width: 55%;
+}
+
+.image-section{
+  float: right;
+  width: 40%;
+}
+
+.image-section img{
+  width: 100%;
+  height: auto;
+}
+
+.content-section .title{
+  font-size: 20px;
+}
+
+.content-section .about-content h3{
+  margin-top: 20px;
+  color:#5d5d5d;
+  font-size: 21px;
+}
+.content-section .about-content p{
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.content-section .about-content .read-more{
+  margin-top: 30px;
+}
+
+.content-section .about-content .read-more a{
+  background-color: #3d3d3d;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  
+}
+.content-section .about-content .read-more a:hover{
+  background-color: azure;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .content-section{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .image-section{
+    margin-top: 40px;
+    float: none;
+    width: 100%;
+  }
+  .image-section img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+}
+
+
+/* misson */
+
+.mission-section{
+  width: 100%;
+  min-height: 100vh;
+  background-color: azure;
+}
+.mission-container{
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.content-section .mission-content h3{
+  margin-top: 20px;
+  color:#5d5d5d;
+  font-size: 21px;
+}
+.content-section .mission-content p{
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.content-section .mission-content .read-more{
+  margin-top: 30px;
+}
+
+.content-section .mission-content .read-more a{
+  background-color: #3d3d3d;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  
+}
+.content-section .mission-content .read-more a:hover{
+  background-color: azure;
+}
+
+.mission-content-section{
+  float: right;
+  width: 40%;
+}
+
+.mission-image-section{
+  float: left;
+  width: 55%;
+}
+
+.mission-image-section img{
+  width: 100%;
+  height: auto;
+}
+
+.mission-content-section .title{
+  font-size: 20px;
+}
+
+.mission-content-section .mission-content h3{
+  margin-top: 20px;
+  color:#5d5d5d;
+  font-size: 21px;
+}
+
+.mission-content-section .mission-content .read-more a{
+  background-color: #3d3d3d;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  
+}
+.mission-content-section .mission-content .read-more a:hover{
+  background-color: azure;
+}
+
+@media screen and (max-width: 768px) {
+  .mission-container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .mission-content-section{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .mission-image-section{
+    margin-top: 40px;
+    float: none;
+    width: 100%;
+  }
+  .mission-image-section img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+}
+
+/* our vision */
+.vision-section{
+  width: 100%;
+  min-height: 100vh;
+  background-color: azure;
+}
+.vision-container{
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.vision-content-section{
+  float: left;
+  width: 55%;
+}
+
+.vision-image-section{
+  float: right;
+  width: 40%;
+}
+
+.vision-image-section img{
+  width: 100%;
+  height: auto;
+}
+
+.vision-content-section .title{
+  font-size: 20px;
+}
+
+.vision-content-section .vision-content h3{
+  margin-top: 20px;
+  color:#5d5d5d;
+  font-size: 21px;
+}
+.vision-content-section .vision-content p{
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.vision-content-section .vision-content .read-more{
+  margin-top: 30px;
+}
+
+.vision-content-section .vision-content .read-more a{
+  background-color: #3d3d3d;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  
+}
+.vision-content-section .vision-content .read-more a:hover{
+  background-color: azure;
+}
+
+@media screen and (max-width: 768px) {
+  .vision-container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .vision-content-section{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .vision-image-section{
+    margin-top: 40px;
+    float: none;
+    width: 100%;
+  }
+  .vision-image-section img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
 }
 
 
@@ -161,7 +437,7 @@ ul.brands li.brand-logo {
   margin-top: 2rem;
   margin-bottom: 2rem;
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 6rem;
   overflow: hidden;
 }
@@ -218,8 +494,9 @@ ul.brands li.brand-logo {
   
 }
 
-.service-container h3 {
+.service-container h2 {
   font-size: 20px;
+  text-align: center;
 }
 
 .service-container p {
@@ -230,6 +507,7 @@ ul.brands li.brand-logo {
   max-width: 50px;
   max-height: 50px; 
 }
+
 /* values-container */
 
 .values-section {
@@ -244,10 +522,6 @@ ul.brands li.brand-logo {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.values-container h3 {
-  font-size: 20px;
-}
-
 .values-container p {
   font-size: 16px;
 }
@@ -256,6 +530,8 @@ ul.brands li.brand-logo {
   font-size: 36px;
   margin-bottom: 10px;
 }
+
+
 /* stats section */
 
 .stats-section {
@@ -356,6 +632,7 @@ ul.brands li.brand-logo {
   background-color: #f4f9ff;
   padding: 30px 0;
   margin-bottom: 40px;
+  text-align: center; /* Center text content */
 }
 
 .section-heading {
@@ -364,7 +641,7 @@ ul.brands li.brand-logo {
 }
 
 .text-center {
-  text-align: center;
+  /* Remove text-align: center; */
 }
 
 .clients-logos {
@@ -389,6 +666,8 @@ ul.brands li.brand-logo {
     width: 100px; /* Adjust size for smaller screens */
   }
 }
+
+
 
 .footer-section {
   margin: 0;
